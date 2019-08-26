@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# open hosts file for editing
+alias hosts='subl /etc/hosts'
+
+# always append indicator for `ls`
+alias ls="command ls -F"
+
+# list files in long format
+alias l="ls -Fl"
+
+# list all files long format, including dot files
+alias la="ls -AFgl"

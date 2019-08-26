@@ -1,0 +1,32 @@
+[alias]
+	aa = add --all
+	co = checkout
+	st = status
+	lg = log --graph --decorate --oneline --abbrev-commit --all
+	pf = push --force-with-lease
+	wip = commit -am "🔸 (WIP) 🔸"
+	recent = for-each-ref --count=7 --sort=-committerdate refs/heads/
+	last = log -1 HEAD
+
+[credential]
+	helper = osxkeychain
+
+[pull]
+	rebase = true
+
+[push]
+	default = current
+
+[core]
+	excludesfile = /Users/greg/.gitignore_global
+
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+
+[commit]
+	template = /Users/greg/.stCommitMsg
