@@ -19,6 +19,7 @@
 
 [core]
 	excludesfile = /Users/greg/.gitignore_global
+  editor = code --wait
 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
@@ -30,3 +31,7 @@
 
 [commit]
 	template = /Users/greg/.stCommitMsg
+
+[user]
+	name = Greg Douglas
+	email = gwshark0@gmail.com
